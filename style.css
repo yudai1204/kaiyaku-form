@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+/* iOS リセット*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+:root {
+    --color-accent: #2b8bcb;
+    --color-accent-light: #2b8bcb50;
+    --color-accent-shadow: #2b8bcb20;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: .1rem;
+    margin: 0;
+    min-width: 350px;
+}
+
+form {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+input, select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+h2 {
+    font-weight: normal;
+}
+h2, label {
+    letter-spacing: .2rem;
+}
+
+.formGroup h2 {
+    color: #000A;
+    font-weight: normal;
+    padding: .1rem;
+    padding-left: 1rem;;
+    width: 50%;
+    position: relative;
+}
+
+.formGroup h2:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 4px;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--color-accent);
+    border-radius: 100px;
+}
+.title{
+    background-color: #2b8bcb;
+    margin:0 0 2rem 0;
+    padding: 4rem 0;
+}
+h1{
+    text-align: center;
+    padding:.8rem;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.6rem;
+    width: 20rem;
+    margin:0 auto;
+    border-bottom: 1px solid #fff;
+}
+
+.formGroup {
+    margin: 2rem 1rem;
+    padding: .5rem 2rem;
+
+    box-shadow: 0 4px 12px #0002;
+    border-radius: 12px;
+}
+
+.formGroup div {
+    margin: 1rem 0 1rem 0;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.formGroup label {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem 1rem 1rem 0rem;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.formGroup .requiredMessage {
+    background-color: #f9535020;
+    color: #f95350;
+    border: 1px solid #f95350;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: .25rem .5rem;
+    margin-left: 1rem;
+}
+
+.formGroup input,
+.formGroup select {
+    -webkit-appearance: textfield;
+
+    font-size: 1rem;
+    height: 3rem;
+    vertical-align: center;
+    padding: 0 1rem;
+    border: 2px solid #0000001a;
+    background-color: #fff;
+    border-radius: 0;
+    color: #000;
+
+    min-width: 10rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.formGroup input[disabled],
+.formGroup select[disabled] {
+    background-color: #00000008;
+    color: #0008;
+}
+
+.formGroup input[readonly].input-confirm{
+    background-color: #fff;
+    border: none;
+    outline:none;
+    color: #000b;
+    font-size: 1.2rem;
+    padding-top: 1rem
+}
+
+.formGroup select {
+    appearance: menulist;
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
+}
+
+.formGroup input::placeholder {
+    color: #0003;
+}
+
+.form-header{
+    max-width: min(400px, 80vw);
+    min-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+.form-header div{
+    border: 2px solid var(--color-accent-light);
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    border-radius: 1000px;
+
+    box-shadow: 0 .25rem .75rem var(--color-accent-shadow);
+}
+.form-header h2{
+    margin: 0;
+    font-size: 1.2rem;
+}
+.form-header > div.selected{
+    background-color: var(--color-accent);
+    color: #fff;
+}
+.confirm-btn, .return-btn{
+    width:min(400px,85vw);
+    display: block;
+    margin: 1rem auto;
+    padding:1.2rem 6rem;
+    font-size: 1.2rem;
+    background-color:  #3dae23;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px #21601255;
+    cursor: pointer;
+}
+.return-btn{
+    background-color:  #929292;
+    box-shadow: 0 4px 12px #6b6b6b55;
+}
+.confirm-btn:hover, .return-btn:hover{
+    opacity: .8;
+}

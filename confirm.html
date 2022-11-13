@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>解約フォーム</title>
+    <link rel="stylesheet" href="./flatpickr.min.css">
+    <script type="text/javascript" src="./flatpickr.js"></script>
+    <link rel="stylesheet" href="./style.css"></link>
+</head>
+
+<body>
+    <section>
+        <div class="title">
+            <h1>解約フォーム</h1>
+        </div>
+        <div class="form-header">
+            <div>
+                STEP1
+                <h2>解約内容のご入力</h2>
+            </div>
+            <div class="selected">
+                STEP2
+                <h2>解約内容のご確認</h2>
+            </div>
+            <div>
+                STEP3
+                <h2>解約申し込み完了</h2>
+            </div>
+        </div>
+        <form id="form-" action="index.html" method="GET">
+            <div class="formGroup">
+                <h2>借主情報</h2>
+                <div class="inputContainer">
+                    <label>氏名</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="name">
+                </div>
+                <div class="inputContainer">
+                    <label>フリガナ</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="nameF">
+                </div>
+                <h2>物件情報</h2>
+                <div class="inputContainer">
+                    <label>物件名</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="property">
+                </div>
+                <div class="inputContainer">
+                    <label>号室・部屋番号</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="roomNum">
+                </div>
+                <h2>連絡先</h2>
+                <p>
+                    必ず連絡の取れる連絡先をご入力下さい。
+                </p>
+                <div class="inputContainer">
+                    <label>電話番号</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="tel">
+                </div>
+                <div class="inputContainer">
+                    <label>メールアドレス</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="email">
+                </div>
+                <h2>日付</h2>
+                <p>鍵明渡日は、通知日(本日)から賃料終了日(1ヶ月後)までの営業日からご選択いただけます。</p>
+                <div class="inputContainer">
+                    <label>通知日</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="notifiedDate">
+                </div>
+                <div class="inputContainer">
+                    <label>明渡日</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="expiredDate">
+                </div>
+                <div class="inputContainer">
+                    <label>賃料終了日</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="endDate">
+                </div>
+                <h2>転居先住所</h2>
+                <p>郵便番号が入力されると市区町村まで自動入力されます。</p>
+                <div class="inputContainer">
+                    <label>郵便番号</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="zipcode">
+                </div>
+                <div class="inputContainer">
+                    <label>都道府県</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="address_prefecture">
+                </div>
+                <div class="inputContainer">
+                    <label>市区町村</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="address1">
+                </div>
+                <div class="inputContainer">
+                    <label>番地</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="address2">
+                </div>
+                <div class="inputContainer">
+                    <label>建物名・部屋番号</label>
+                    <input type="text" readonly="readonly" class="input-confirm" name="address3">
+                </div>
+            </div>
+            <button class="confirm-btn" type="button">送信する</button>
+            <button class="return-btn" type="submit">編集</button>
+        </form>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
